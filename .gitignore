@@ -1,0 +1,23 @@
+# VsCode
+/.vscode
+/.vscode-insiders
+
+# Node
+/node_modules
+
+# Build
+/build
+/dist
+
+# Logs
+/logs
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea
+
+# SVG
+*.svg
