@@ -14,6 +14,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 path.style.fill = defaultColor;
                 document.getElementById('state').innerHTML = '';
             });
+            path.onclick = () => {
+                let stateName = path.getAttribute('title').toLowerCase();
+                stateName = stateName.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+                window.location.href = `/src/public/${stateName}.html`;
+            }
         });
     }
 });
