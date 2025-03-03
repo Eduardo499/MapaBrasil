@@ -8,9 +8,11 @@ document.addEventListener('DOMContentLoaded', () => {
         mapSvg.querySelectorAll('path').forEach(path => {
             path.addEventListener('mouseover', () => {
                 path.style.fill = hoverColor;
+                document.getElementById('state').innerHTML = path.getAttribute('title');
             });
             path.addEventListener('mouseout', () => {
                 path.style.fill = defaultColor;
+                document.getElementById('state').innerHTML = '';
             });
         });
     }
