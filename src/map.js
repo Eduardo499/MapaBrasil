@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
             path.onclick = () => {
                 let stateName = path.getAttribute('title').toLowerCase();
                 stateName = stateName.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+                stateName = stateName.replace(/\s/g, '-'); // Substitui espaços por hífen
                 window.location.href = `/src/public/${stateName}.html`;
             }
         });
