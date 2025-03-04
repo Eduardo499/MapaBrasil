@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goiás</title>
+    <style>
+        body {
+            font-family: Roboto, sans-serif;
+            margin: 20px;
+            background-color: #8CBD76;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        .info {
+            margin-bottom: 20px;
+        }
+        .info label {
+            font-weight: bold;
+        }
+        #button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        #button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <h1>Informações sobre o Goiás</h1>
+    <div class="info">
+        <label>População:</label> 7.056.495
+    </div>
+    <div class="info">
+        <label>PIB:</label> R$ 318,6 bilhões
+    </div>
+    <div class="info">
+        <label>PIB per capita:</label> R$ 37.414,08
+    </div>
+    <div class="info">
+        <label>IDH:</label>    0,737    
+    </div>
+    <div class="info">
+        <label>Área:</label> 	340.242,860 km²
+    </div>
+    <div class="info">
+        <label>Capital:</label> Goiânia
+    </div>
+    <h2>Informações sobre a Capital</h2>
+    <div class="info">
+        <label>População:</label> 1.437.366
+    </div>
+    <div class="info">
+        <label>PIB:</label> R$ 59 bilhões
+    </div>
+    <div class="info">
+        <label>PIB per capita:</label> 38.483,54
+    </div>
+    <div class="info">
+        <label>IDH:</label>   0,799  
+    </div>
+    <div class="info">
+        <label>Área:</label>729,296 km²
+    </div>
+    <button id="button" onclick="window.open('https://geoftp.ibge.gov.br/cartas_e_mapas/mapas_estaduais_e_distrito_federal/politico/2015/go_politico1000k_2015_v2.pdf', '_blank')">Ver Mapa do Estado</button>
+    <button id="button" onclick="window.open('https://geoftp.ibge.gov.br/cartas_e_mapas/mapas_municipais/colecao_de_mapas_municipais/2022/GO/goiania/A0_5208707_MM.pdf', '_blank')">Ver Mapa da Capital</button>
+    <button id="button" onclick="window.location.href='index.html'">Voltar</button>
+    <footer style="margin-top: 40px; text-align: center; font-size: 14px; color: black; background-color: #3A762F;">
+        <p>Fontes: IBGE, dados de 2021/2022</p>
+    </footer>
+</body>
+</html>
