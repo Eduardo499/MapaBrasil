@@ -6,24 +6,6 @@
     <title>Mapa Interativo do Brasil</title>
     <link rel="stylesheet" href="style.css">
     <script src="/src/map.js"></script>
-    <style>
-      #button {
-            background-color: #3498db;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin-top: 20px;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-        #button:hover {
-            background-color: #2980b9;
-        }
-    </style>
 </head>
 <body>
     <div class="map">
@@ -199,6 +181,13 @@
       </svg>
     </div>
     <p id="state"></p>
-    <button id="button" onclick="window.open('https://geoftp.ibge.gov.br/cartas_e_mapas/mapas_do_brasil/politico/brasil_politico2500k_2023/brasil_politico2500k_2023.pdf', '_blank')">Ver Mapa do Brasil</button>
+    <div class="buttons">
+      <button class="map-button" onclick="window.open('https://geoftp.ibge.gov.br/cartas_e_mapas/mapas_do_brasil/politico/brasil_politico2500k_2023/brasil_politico2500k_2023.pdf', '_blank')">Ver Mapa do Brasil</button>
+      <button class="map-button" onclick="window.open('https://geoftp.ibge.gov.br/cartas_e_mapas/mapas_regionais/politico/2017/norte_politico2700k_2017.pdf', '_blank')">Ver Mapa do Norte</button>
+      <button class="map-button" onclick="window.open('https://geoftp.ibge.gov.br/cartas_e_mapas/mapas_regionais/politico/2017/nordeste_politico2000k_2017.pdf', '_blank')">Ver Mapa do Nordeste</button>
+      <button class="map-button" onclick="window.open('https://geoftp.ibge.gov.br/cartas_e_mapas/mapas_regionais/politico/2017/centro_oeste_politico2200k_2017.pdf', '_blank')">Ver Mapa do Centro-Oeste</button>
+      <button class="map-button" onclick="window.open('https://geoftp.ibge.gov.br/cartas_e_mapas/mapas_regionais/politico/2017/sudeste_politico1600k_2017.pdf', '_blank')">Ver Mapa do Sudeste</button>
+  </div>
+    
 </body>
 </html>
