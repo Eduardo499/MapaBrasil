@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paraíba</title>
+    <style>
+        body {
+            font-family: Roboto, sans-serif;
+            margin: 20px;
+            background-color: #8CBD76;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        .info {
+            margin-bottom: 20px;
+        }
+        .info label {
+            font-weight: bold;
+        }
+        #button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        #button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <h1>Informações sobre a Paraíba</h1>
+    <div class="info">
+        <label>População:</label> 3.974.687
+    </div>
+    <div class="info">
+        <label>PIB:</label>R$ 77,47 bilhões
+    </div>
+    <div class="info">
+        <label>PIB per capita:</label> R$ 21.662,30
+    </div>
+    <div class="info">
+        <label>IDH:</label>    0,698         
+    </div>
+    <div class="info">
+        <label>Área:</label> 56.467,242 km²
+    </div>
+    <div class="info">
+        <label>Capital:</label> João Pessoa
+    </div>
+    <h2>Informações sobre a Capital</h2>
+    <div class="info">
+        <label>População:</label> 833.932
+    </div>
+    <div class="info">
+        <label>PIB:</label> R$ 20,766 bilhões
+    </div>
+    <div class="info">
+        <label>PIB per capita:</label>R$ 26.936,78
+    </div>
+    <div class="info">
+        <label>IDH:</label>  0,763  
+    </div>
+    <div class="info">
+        <label>Área:</label>210,044 km²
+    </div>
+    <button id="button" onclick="window.open('https://geoftp.ibge.gov.br/cartas_e_mapas/mapas_estaduais_e_distrito_federal/politico/2009/pb_politico800k_2009.pdf', '_blank')">Ver Mapa do Estado</button>
+    <button id="button" onclick="window.open('https://geoftp.ibge.gov.br/cartas_e_mapas/mapas_municipais/colecao_de_mapas_municipais/2022/PB/joao_pessoa/A0_2507507_MM.pdf', '_blank')">Ver Mapa da Capital</button>
+    <button id="button" onclick="window.location.href='index.html'">Voltar</button>
+    <footer style="margin-top: 40px; text-align: center; font-size: 14px; color: black; background-color: #3A762F;">
+        <p>Fontes: IBGE, dados de 2021/2022</p>
+    </footer>
+</body>
+</html>
